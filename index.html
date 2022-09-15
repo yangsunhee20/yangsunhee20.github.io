@@ -107,9 +107,9 @@
 
         async function predict() {
             var dic_class2information = {};
-            dic_class2information['나연'] = 'TWICE의 멤버';
-            dic_class2information['장원영'] = 'IVE의 멤버.';
-            dic_class2information['제니'] = 'BLACKPINK의 메인래퍼이자 리드보컬';
+            dic_class2information['로제'] = '블랙핑크의 멤버';
+            dic_class2information['최예나'] = '솔로가수';
+            dic_class2information['안유진'] = '아이브의 멤버';
             var image = document.getElementById("face-image");
             const prediction = await model.predict(image, false);
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
